@@ -1,0 +1,79 @@
+
+* { box-sizing: border-box; }
+
+html { font-size: 10px; } 
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+  font-family: "Georgia", "Times New Roman", serif;         
+}
+
+
+h1, h2, h3 { font-family: "Trebuchet MS", "Gill Sans", sans-serif; } 
+h1 { font-size: 3rem; letter-spacing: 0.1rem; margin: 0; }
+h2 { font-size: 2.25rem; letter-spacing: 0.08rem; }
+h3 { font-size: 1.75rem; letter-spacing: 0.05rem; }
+
+
+header { text-align: center; }
+
+
+section > p:first-of-type { text-indent: 1.25rem; }
+
+
+header, section, aside, nav, footer { padding: 20px; }
+section { float: left; width: 50%; }
+aside   { float: left; width: 30%; }
+nav     { float: left; width: 20%; }
+footer  { clear: both; }
+
+header, footer {
+  border-top: 5px solid #a66;   /* reddish */
+  border-bottom: 5px solid #a66;
+}
+
+
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav li { margin: 0 0 20px 0; }
+nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  border: 2px solid #a66;
+  color: #000;
+}
+nav a:hover,
+nav a:focus { background: #a66; color: #fff; outline: none; }
+
+
+a:link,
+a:visited {
+  color: #7a1f1f;           
+  text-decoration: underline;
+}
+a:focus,
+a:hover {
+  color: #000;
+  text-decoration: none;
+  outline: none;            
+}
+a:active {
+  color: #fff;
+  background: #7a1f1f;     
+}
+
+a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.25rem;
+  background: url("external-link-52.png") no-repeat center / contain;
+  vertical-align: text-bottom;
+}
